@@ -1,0 +1,328 @@
+        @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Piazzolla", serif;
+        }
+        
+         :root {
+            --main-bg: #960641;
+        }
+        
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+        }
+        
+        .fix {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0.4;
+        }
+        
+        .main {
+            width: 330px;
+            height: 330px;
+            border: 1px solid #CCC;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+        
+        .earth {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            margin: auto;
+            animation: circle 20s linear infinite;
+        }
+        
+        @keyframes circle {
+            0% {
+                transform: rotate(0deg) translate(-165px) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translate(-165px) rotate(-360deg);
+            }
+        }
+        
+        .sun {
+            height: 150px;
+            width: 150px;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            margin: auto;
+        }
+        
+        .back {
+            background-color: var(--main-bg);
+        }
+        
+        .row {
+            margin: 0;
+        }
+        
+        .navbar-toggler {
+            color: black;
+            border: solid 2px black;
+        }
+        
+        .navbar a {
+            margin-left: 20px;
+            color: aliceblue;
+        }
+        
+        .navbar a:hover {
+            color: var(--main-color);
+        }
+        
+        .main_header_right {
+            height: 40rem;
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            opacity: 0.9;
+        }
+        
+        .main_header_left {
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .main_header_left h1 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .carousel-caption h2 {
+            color: lawngreen;
+            letter-spacing: 2px;
+            font-size: large;
+        }
+        
+        .main_header_left button {
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1.4rem;
+            border-radius: 2rem;
+            box-shadow: 0 8px 6px -6px #fff;
+            outline: none;
+            margin: auto;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--main-bg);
+        }
+        
+        footer p {
+            margin: 0;
+            text-align: center;
+            color: aliceblue;
+            line-height: 1.7rem;
+            font-size: 1rem;
+        }
+        
+        @media(max-width:768px) {
+            .main_header_left {
+                height: auto;
+                margin: 5rem 0;
+            }
+            .main_header_left {
+                height: auto;
+                margin-top: 3rem;
+            }
+        }
+        
+        .socialmedia {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .main_header_left a {
+            text-decoration: none;
+            color: #CCC;
+        }
+        
+        .errmsg {
+            width: 30rem;
+            height: 30rem;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            margin: auto;
+            opacity: 0.9;
+        }
+        
+        .errorpage {
+            position: fixed;
+            bottom: 0;
+        }
+        
+        .errbut {
+            z-index: 1;
+            position: relative;
+            top: 27rem;
+            left: 12rem;
+        }
+        
+        .mainContainer {
+            margin: auto;
+            min-height: 10rem;
+            background-color: #323544;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            font-family: "Roboto", sans-serif;
+            color: #CCC;
+        }
+        
+        .topLayer {
+            width: 100%;
+            height: 20%;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        .topLayer p {
+            color: #fff;
+            font-weight: 100;
+        }
+        
+        .main_layer {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .main_layer #cityName {
+            padding: 2rem;
+            font-weight: 300;
+            font-size: 2rem;
+            color: yellowgreen;
+        }
+        
+        .main_layer .middleLayer {
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+        }
+        
+        .main_layer .middleLayer p,
+        .main_layer .middleLayer .fa-cloud {
+            font-size: 6rem;
+            font-weight: 900;
+        }
+        
+        .coord {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        
+        .sup1 {
+            font-size: 6rem;
+            margin-top: -2rem;
+        }
+        
+        .data_hide {
+            visibility: hidden;
+            transition: all 0.3s Linear;
+        }
+        
+        .searchmenu {
+            position: relative;
+            margin: 2rem auto;
+        }
+        
+        .searchmenu input[type="text"] {
+            width: 100%;
+            padding: 2rem 5rem 2rem 2rem;
+            background: #1e202b;
+            color: #CCC;
+            outline: none;
+            border: none;
+            font-size: 1.7rem;
+            border-radius: 3rem;
+            opacity: 0.8;
+        }
+        
+         ::placeholder {
+            color: white;
+        }
+        
+        .searchmenu input[type="submit"] {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: none;
+            background: #6B8F23;
+            padding: 0 3rem;
+            border-radius: 3rem;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+        
+        .searchmenu input[type="submit"]:hover {
+            color: #6B8F23;
+            background-color: #fff;
+        }
+        
+        .searchmenu {
+            width: auto;
+        }
+        
+        .mainContainer {
+            width: auto;
+            opacity: 0.7;
+        }
+        
+        #cond {
+            position: absolute;
+            bottom: 0px;
+            left: 550px;
+            margin: auto;
+            font-size: 3rem;
+            color: #CCC;
+        }
